@@ -1,0 +1,21 @@
+items[0].split(' ') == 2:
+    print("1111!!!!!!!!!!1111")
+    temp_l = items[0].split(' ')
+    print('------')
+    print(temp_l)
+    print('------')
+    lastname_list.append(temp_l[0])
+    firstname_list.append(temp_l[1])
+    surname_list.append(items[2])
+  elif items[0].split(' ') == 1:
+    lastname_list.append(items[0])
+    if items[1].split(' ') == 2:
+      temp_l = [items[1].split(' ')]
+      print('------')
+      print(temp_l)
+      print('------')
+      firstname_list.append(temp_l[0])
+      surname_list.append(temp_l[1])
+    elif items[1].split(' ') == 1:
+      firstname_list.append(items[1])
+      surname_list.append(items[2])
